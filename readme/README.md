@@ -1,2 +1,0 @@
-# NuevoTigre
-Trabajo integrador
