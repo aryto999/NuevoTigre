@@ -21,6 +21,7 @@
   --color-default: #364d59;
   --color-primary: #a65732;
   --color-secondary: #52565e;
+
 }
 
 /* Smooth scroll behavior */
@@ -694,11 +695,15 @@ section {
 /*--------------------------------------------------------------
 # Constructions Section
 --------------------------------------------------------------*/
+
 .constructions .card-item {
-  border: 1px solid rgba(82, 86, 94, 0.2);
-  background: #fff;
+
+  border: 5px solid black;
+  background: #a65732;
   position: relative;
   border-radius: 0;
+  ;
+  
 }
 
 .constructions .card-item .card-bg {
@@ -706,21 +711,24 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+ ;
 }
 
 .constructions .card-item .card-body {
-  padding: 30px;
+  padding: 50px;
+  
+  
 }
 
 .constructions .card-item h4 {
   font-weight: 700;
   font-size: 20px;
   margin-bottom: 15px;
-  color: var(--color-secondary);
+  color: black;
 }
 
 .constructions .card-item p {
-  color: var(--color-secondary);
+  color:black;
   margin: 0;
 }
 
@@ -2688,8 +2696,7 @@ section {
 .footer .footer-legal .credits a {
   color: var(--color-primary);
 }
-
-
+/*----------------EDICIONES DEL CSS PARA EL INDEX--------------- */
 .logoinicio {
   display: flex;
   max-width: 25%;
@@ -2700,3 +2707,57 @@ section {
 .subtitulo_hero {
   color: white;
 }
+.servicios_index{
+background-color: black;
+
+}
+.constructions h2{
+
+   color: white;
+   text-decoration: underline;
+   text-decoration-color:var(--color-primary);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+.constructions p  {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+.constructions .card-item {  display: flex;
+  padding: 30px 40px;
+  border: 2px solid var(--color-primary);
+  background-color: #000;
+}
+.constructions .card-item p {
+  color: #a65732;
+ 
+;
+}
+.constructions .card-item h4 {
+  color: #a65732;
+}
+.boton_servicios_index {
+  display: flex;
+  font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+    border-radius: 50px;
+    transition: 0.5s;
+    
+    color: #fff;
+    border: 2px solid var(--color-primary);
+    align-items: center
+    ;
+    justify-content: center;
+}
+.contacto_index
+{color: black;}
+
+
+/*----------------FIN DE EDICIONES DEL CSS PARA EL INDEX--------------- */
