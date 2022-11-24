@@ -87,6 +87,7 @@
     </div><!-- End Breadcrumbs -->
     
       <section id="contact" class="contact">
+        <form id="formulario"  >
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="section-header">
             <h2>Formulario de reserva</h2>
@@ -94,7 +95,7 @@
         <div class="container">
            
 
-        <form id="formulario" >
+        
           <div class="row">
             <div class="col">
               <input
@@ -136,7 +137,7 @@
           </div>
           
 
-          <form  id="formulario" >
+          
             <div class="row">
               
               <div class="col">
@@ -165,7 +166,7 @@
                   required
                   minlength="10"
                   maxlength="11"
-                  pattern="[0,9]{10}*"
+                  
                   title="Ingresa un número de telefono valido"
               />
   
@@ -174,36 +175,36 @@
               </div>
 
             </div>
-          <form id="formReserva">
+          
             <div class="col">
               <input type="date"  min="2022-11-28" max="2023-05-12" step="7" name="fecha" 
               class="form-control" id="date" placeholder="Dia:" required>
             </div>
           </div>
           
-          <form id="formReserva">
-            <fieldset class="form-group">
+         
+            
               <div class="row">
                 <legend class="col-form-label col-sm-2 pt-0">Seleccione el paquete:</legend>
                 <div class="col-sm-3">
                   <div class="form-check form-check-inline" >
-                    <input class="form-check-input" type="radio" name="paquete"
-                    id="inlineCheckbox1" value="option1" required>
-                    <label class="form-check-label " for="inlineRadio1">Full</label>
+                    <input class="form-check-input" type="checkbox" name="paquete1"
+                    id="inlineCheckbox1" value="option1" >
+                    <label class="form-check-label " for="inlineCheckbox1">Full</label>
                   </div>
                   <div class="form-check form-check-inline">
                     
-                      <input class="form-check-input " type="radio" name="paquete"
-                      id="inlineCheckbox2" value="option2" required>
-                      <label class="form-check-label" for="inlineRadio2">Plus</label>
+                      <input class="form-check-input " type="checkbox" name="paquete2"
+                      id="inlineCheckbox2" value="option2" >
+                      <label class="form-check-label" for="inlineCheckbox2">Plus</label>
                     
 
 
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input " type="radio" name="paquete"
-                    id="inlineCheckbox3" value="option3" required>
-                    <label class="form-check-label" for="inlineRadio3">Básico</label>
+                    <input class="form-check-input " type="checkbox" name="paquete3"
+                    id="inlineCheckbox3" value="option3" >
+                    <label class="form-check-label" for="inlineCheckbox3">Básico</label>
                   </div>
 
 
@@ -216,7 +217,7 @@
                   <label  class="col-form-label col-sm-2 pt-1">Cantitdad de personas:</label>
                   <div class="col-sm-2">
                     <div class="value_cont">
-                      <input type="number" name="" id="numero" min="0" max="50" required>
+                      <input type="number" name="numero" id="numero" min="0" max="50" required>
          
                     </div>
                     <div class="addNumberGeneral"></div>
@@ -233,18 +234,18 @@
             
 
             </fieldset>
-            <button class="btn btn-primary" type="submit">Enviar</button>
-                 
-            </div>  
             
-            <div
-              class="alert alert-success mt-2 d-none"
-              id="alertSuccess"
-            ></div>
-            <div id="respuesta" ></div>      
-        </form>
+            
+                 
+            </div> 
+                
+         
+            <div class=" text-center"><button type="submit">Reservar</button></div>
+            <div id="respuesta" class="alert alert-succes  text-center">
+
+          </div>
       
-        
+        </form>
       </section> 
       
   </div>
@@ -354,6 +355,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <script src="reserva.js"></script>
 
 </body>
 
