@@ -2375,7 +2375,7 @@ section {
   padding: 0;
 }
 
-.blog .sidebar .categories ul li+li {constr
+.blog .sidebar .categories ul li+li {
   padding-top: 10px;
 }
 
