@@ -43,8 +43,8 @@ formulario.addEventListener("submit", (e) => {
 
     mensajeExito()
 
-    respuesta.textContent = `Gracias por reservar  el  paquete: ${paqueteGeneral}, 
-    Precio Final: $ ${precio} `
+    respuesta.textContent = `Gracias por reservar el  paquete ${paqueteGeneral}, el precio final de la estadía es de:  $ ${precio} `
+    
 
     
 
